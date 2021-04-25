@@ -17,14 +17,16 @@ function FriendList({ friends }) {
     </ul>
   );
 }
+
+FriendList.defaultProps = {
+  friends: [],
+};
+
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
-    PropTypes.exact({
-      avatar: PropTypes.string,
-      name: PropTypes.string,
-      isOnline: PropTypes.bool,
-      id: PropTypes.number,
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
     }),
-  ).isRequired,
+  ),
 };
 export default FriendList;
