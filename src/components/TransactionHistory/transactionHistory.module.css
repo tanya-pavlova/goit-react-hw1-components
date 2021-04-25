@@ -1,0 +1,11 @@
+.transactionTable {
+  margin: 0 auto;
+  width: 600px;
+  padding: 20px 0px;
+}
+
+.type {
+  padding-left: 75px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
